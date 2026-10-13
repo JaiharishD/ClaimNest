@@ -1,0 +1,493 @@
+/* ClaimNest - Theme Custom Styles */
+/* Colors: #815854 (Primary Mocha/Terracotta) and #F9EBDE (Almond/Cream Background) */
+
+/* App Container */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-page);
+}
+
+.main-content {
+  flex: 1;
+  padding: 24px 0 40px;
+}
+
+/* Navbar */
+.app-navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--border-main);
+  box-shadow: 0 1px 3px rgba(129, 88, 84, 0.06);
+}
+
+.navbar-brand-title {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: -0.3px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.brand-text {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.brand-text-accent {
+  color: #4a302e;
+}
+
+.nav-link-custom {
+  color: var(--text-main);
+  font-weight: 600;
+  font-size: 0.92rem;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+}
+
+.nav-link-custom:hover {
+  color: var(--primary-color);
+  background-color: var(--primary-light);
+}
+
+.nav-link-custom.active {
+  color: var(--panel-text) !important;
+  background-color: var(--primary-color) !important;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(129, 88, 84, 0.25);
+}
+
+/* Page Headers */
+.page-header {
+  margin-bottom: 24px;
+}
+
+.page-title {
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: #4a302e;
+  margin-bottom: 4px;
+  letter-spacing: -0.4px;
+}
+
+.page-subtitle {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+/* Cards */
+.app-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-main);
+  border-radius: 8px;
+  padding: 22px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(129, 88, 84, 0.05);
+}
+
+.app-card-header {
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-card-title {
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+/* Dashboard Metric Stat Cards */
+.stat-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-main);
+  border-radius: 8px;
+  padding: 18px 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 1px 3px rgba(129, 88, 84, 0.04);
+}
+
+.stat-card.blue {
+  border-top: 4px solid var(--primary-color);
+}
+
+.stat-card.amber {
+  border-top: 4px solid #a36b51;
+}
+
+.stat-card.teal {
+  border-top: 4px solid #5d403d;
+}
+
+.stat-card.red {
+  border-top: 4px solid #9c2e2e;
+}
+
+.stat-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.stat-value {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #4a302e;
+  line-height: 1.2;
+}
+
+.stat-hint {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-top: 6px;
+}
+
+/* Status Badges */
+.status-badge {
+  display: inline-block;
+  padding: 3px 9px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  border-radius: 4px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.status-badge.active {
+  background-color: #e3f2e4;
+  color: #2e6930;
+  border: 1px solid #c4e4c6;
+}
+
+.status-badge.expiring-soon {
+  background-color: #faebd7;
+  color: #8a4b08;
+  border: 1px solid #edd5bd;
+}
+
+.status-badge.expired {
+  background-color: #fae6e6;
+  color: #9c2e2e;
+  border: 1px solid #f2c9c9;
+}
+
+/* Claim status badges */
+.status-badge.pending {
+  background-color: #fbf0e4;
+  color: var(--primary-color);
+  border: 1px solid #eed6c2;
+}
+
+.status-badge.submitted {
+  background-color: #f1dfd2;
+  color: #5c3835;
+  border: 1px solid #dfc3ae;
+}
+
+.status-badge.in-progress {
+  background-color: var(--primary-color);
+  color: var(--panel-text);
+  border: 1px solid var(--primary-color);
+}
+
+.status-badge.resolved {
+  background-color: #e3f2e4;
+  color: #2e6930;
+  border: 1px solid #c4e4c6;
+}
+
+.status-badge.rejected {
+  background-color: #fae6e6;
+  color: #9c2e2e;
+  border: 1px solid #f2c9c9;
+}
+
+/* Simple Clean Tables */
+.app-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.app-table th {
+  background-color: #f4e6d9;
+  color: #4a302e;
+  font-weight: 700;
+  text-align: left;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border-main);
+}
+
+.app-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border-light);
+  color: var(--text-main);
+  vertical-align: middle;
+}
+
+.app-table tbody tr:hover {
+  background-color: #fdf8f4;
+}
+
+/* Form Styles */
+.form-label-custom {
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: #4a302e;
+  margin-bottom: 6px;
+}
+
+.form-control-custom,
+.form-select-custom {
+  border: 1px solid var(--border-main);
+  border-radius: 6px;
+  padding: 9px 12px;
+  font-size: 0.92rem;
+  color: var(--text-main);
+  background-color: #ffffff;
+  width: 100%;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control-custom:focus,
+.form-select-custom:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(129, 88, 84, 0.2);
+  outline: none;
+}
+
+.form-hint {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.date-helper-box {
+  background-color: #f5e7db;
+  border: 1px solid #e2cbba;
+  border-radius: 6px;
+  padding: 12px 16px;
+  font-size: 0.88rem;
+  color: #6e433f;
+  margin-bottom: 16px;
+}
+
+/* Bootstrap utility overrides to theme */
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.border-primary {
+  border-color: var(--primary-color) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+  color: var(--panel-text) !important;
+}
+
+/* Secondary Feature Panel (as requested in palette composition) */
+.secondary-panel {
+  background-color: var(--panel-bg);
+  color: var(--panel-text);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+}
+
+/* Bootstrap Button Overrides to Theme Palette */
+.btn-primary {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: var(--panel-text) !important;
+  font-weight: 600;
+  box-shadow: 0 1px 2px rgba(129, 88, 84, 0.2);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: var(--primary-hover) !important;
+  border-color: var(--primary-hover) !important;
+  color: #ffffff !important;
+}
+
+.btn-outline-primary {
+  border-color: var(--primary-color) !important;
+  color: var(--primary-color) !important;
+  font-weight: 600;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: var(--panel-text) !important;
+}
+
+.btn-outline-secondary {
+  border-color: var(--border-main) !important;
+  color: var(--primary-color) !important;
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--primary-light) !important;
+  color: var(--primary-color) !important;
+}
+
+/* High-Contrast Alerts on #F9EBDE Background */
+.alert-warning {
+  background-color: #ffffff !important;
+  border: 1px solid #dfc8b6 !important;
+  border-left: 6px solid #815854 !important;
+  color: #4a302e !important;
+  box-shadow: 0 2px 8px rgba(129, 88, 84, 0.08) !important;
+  border-radius: 8px !important;
+  padding: 14px 18px !important;
+}
+
+.alert-warning .alert-link {
+  color: #815854 !important;
+  font-weight: 700 !important;
+  text-decoration: underline !important;
+}
+
+.alert-warning .alert-link:hover {
+  color: #694441 !important;
+}
+
+.alert-danger {
+  background-color: #ffffff !important;
+  border: 1px solid #f2c9c9 !important;
+  border-left: 6px solid #9c2e2e !important;
+  color: #8a2924 !important;
+  box-shadow: 0 2px 8px rgba(156, 46, 46, 0.08) !important;
+  border-radius: 8px !important;
+  padding: 14px 18px !important;
+}
+
+.alert-success {
+  background-color: #ffffff !important;
+  border: 1px solid #cde6cf !important;
+  border-left: 6px solid #2e6930 !important;
+  color: #215925 !important;
+  box-shadow: 0 2px 8px rgba(46, 105, 48, 0.08) !important;
+  border-radius: 8px !important;
+  padding: 14px 18px !important;
+}
+
+/* Simple CSS Bar Chart for Reports */
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.chart-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.chart-row-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #4a302e;
+}
+
+.chart-bar-bg {
+  width: 100%;
+  height: 18px;
+  background-color: #ede0d4;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.chart-bar-fill {
+  height: 100%;
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+/* Modal Simple Styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(74, 48, 46, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+  padding: 16px;
+}
+
+.modal-box {
+  background-color: #ffffff;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+  border: 1px solid var(--border-main);
+  box-shadow: 0 10px 25px rgba(74, 48, 46, 0.15);
+  overflow: hidden;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header-custom {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-body-custom {
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.modal-footer-custom {
+  padding: 12px 20px;
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  background-color: #fbf5ee;
+}
+
+/* Footer */
+.app-footer {
+  background-color: #ffffff;
+  border-top: 1px solid var(--border-main);
+  padding: 18px 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}

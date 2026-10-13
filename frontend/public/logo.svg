@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Rounded Container in Theme Color #815854 -->
+  <rect width="64" height="64" rx="14" fill="#815854" />
+  
+  <!-- Protective Shield Emblem in #F9EBDE -->
+  <path d="M32 10 L50 17.5 V32 C50 42.5 42.5 50.5 32 54 C21.5 50.5 14 42.5 14 32 V17.5 Z" fill="#F9EBDE" />
+
+  <!-- Nest Cradle Arch in #815854 -->
+  <path d="M21 33 C21 39 26 44 32 44 C38 44 43 39 43 33" stroke="#815854" stroke-width="3.5" stroke-linecap="round" fill="none" />
+
+  <!-- Verification Checkmark in #815854 -->
+  <path d="M26 29 L30 33 L38 23" stroke="#815854" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+</svg>

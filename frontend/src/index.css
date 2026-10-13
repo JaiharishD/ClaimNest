@@ -1,0 +1,54 @@
+/* ClaimNest - Theme Variables & Reset */
+/* Palette: Primary: #815854 | Background: #F9EBDE */
+:root {
+  --primary-color: #815854;
+  --primary-hover: #694441;
+  --primary-active: #543431;
+  --primary-light: #f1dfd2;
+  --primary-subtle: #fbf5ee;
+
+  --bg-page: #F9EBDE;
+  --card-bg: #ffffff;
+  --panel-bg: #815854;
+  --panel-text: #F9EBDE;
+
+  --text-main: #4a302e;
+  --text-primary: #815854;
+  --text-muted: #8c6e6b;
+  --text-light: #ffffff;
+
+  --border-main: #dfc8b6;
+  --border-light: #ece0d4;
+  --border-dark: #815854;
+
+  --success-color: #2e6930;
+  --success-bg: #e3f2e4;
+  --warning-color: #92541a;
+  --warning-bg: #f9eedf;
+  --danger-color: #9c2e2e;
+  --danger-bg: #fae6e6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Accessible focus outlines in #815854 */
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}

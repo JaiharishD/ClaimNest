@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- Rounded Shield Background in #815854 -->
+  <rect width="48" height="48" rx="12" fill="#815854"/>
+  
+  <!-- Nest / Shield Inner Emblem in #F9EBDE -->
+  <!-- Outer Shield Outline -->
+  <path d="M24 8 L37 13.5 V25 C37 32.5 31.5 38.5 24 41 C16.5 38.5 11 32.5 11 25 V13.5 Z" 
+        fill="#F9EBDE" />
+  
+  <!-- Nest Arch in #815854 -->
+  <path d="M16 26 C16 30 20 34 24 34 C28 34 32 30 32 26" 
+        stroke="#815854" stroke-width="2.5" stroke-linecap="round" fill="none" />
+  
+  <!-- Claim Checkmark in #815854 -->
+  <path d="M19.5 22.5 L22.5 25.5 L28.5 18" 
+        stroke="#815854" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+</svg>
